@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tuli1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="I love cats..."
+        android:textSize="36dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:paddingLeft="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="...it's people I can't stand."
+        android:textSize="36dp"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        android:paddingBottom="60dp"/>
+
+    <ImageView
+        android:id="@+id/violent"
+        android:src="@drawable/violent"
+        android:tint="@android:color/white"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/grumpy"
+        android:src="@drawable/grumpy"
+        android:tint="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/violent"/>
+
+
+    <ImageView
+        android:id="@+id/poser"
+        android:src="@drawable/poser"
+        android:tint="@android:color/white"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/grumpy"/>
+
+    <ImageView
+        android:id="@+id/shouter"
+        android:src="@drawable/shouter"
+        android:tint="@android:color/white"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/poser"/>
+
+    <ImageView
+        android:id="@+id/egocentric"
+        android:src="@drawable/egocentric"
+        android:tint="@android:color/white"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/shouter"/>
+
+</RelativeLayout>
